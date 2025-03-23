@@ -57,9 +57,9 @@ function App() {
 
   return (
    <>
-    <main className='h-screen relative overflow-y-scroll flex bg-black text-white'>
-      <div className='h-screen w-60'>
-        <aside className='h-full w-60 fixed top-0 left-0 bg-black flex flex-col justify-between px-3 pt-2 pb-5 border-r border-white/15'>
+    <main className='h-screen relative overflow-y-scroll flex sm:flex-row flex-col bg-black text-white'>
+      <div className='sm:block hidden h-screen w-44 md:w-60'>
+        <aside className='size-full sticky top-0 left-0 bg-black flex flex-col justify-between px-3 pt-2 pb-5 border-r border-white/15'>
           <div>
             <div className='px-3 pb-4 pt-8 mb-5 w-32'>
               <img
@@ -96,10 +96,17 @@ function App() {
             <Menu/>More
           </div>
         </aside>
-
       </div>
+      <div className='z-40 sticky top-0 left-0 bg-black sm:hidden px-3 py-3  w-full'>
+            <img
+              src='/insta-text-logo.png'
+              alt='Instagram'
+              className='w-32'
+            />
+      </div>
+
       <div className='flex-1 '>
-        <section className='w-[630px] mx-auto px-20'>
+        <section className='sm:w-[470px] lg:w-[630px] mx-auto px-3 sm:px-8 lg:px-20'>
           <PostCard/>
           <PostCard/>
           <PostCard/>

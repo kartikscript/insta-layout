@@ -2,17 +2,17 @@ import { BadgeCheck, Bookmark, Ellipsis, Heart, MessageCircle, Send, Smile, X } 
 
 const PostCard = () => {
   return (
-    <main className='w-full space-y-4 pt-6 pb-4 border-b border-white/15'>
+    <main className='w-full space-y-4 pt-2 sm:pt-6 pb-4 border-b border-white/15'>
       <div className="flex justify-between items-center ">
-        <p>Suggested for you</p>
+        <p className="text-sm sm:text-base">Suggested for you</p>
         <X className="opacity-70 size-4"/>
       </div>
       <div className="text-sm flex gap-2 w-full">
-          <div className="size-10 rounded-full flex justify-center items-center bg-gradient-to-tr from-amber-600 via-pink-600 to-fuchsia-600 from-30% via-60%">
-            <img src="/insta-profile.jpg" alt="user" className="rounded-full border-2 border-black size-9 object-cover overflow-hidden" />
+          <div className="size-8 p-[1px] sm:size-10 sm:p-0.5 rounded-full flex justify-center items-center bg-gradient-to-tr from-amber-600 via-pink-600 to-fuchsia-600 from-30% via-60%">
+            <img src="/insta-profile.jpg" alt="user" className="rounded-full border sm:border-2 border-black size-full object-cover overflow-hidden" />
           </div>
-          <div>
-            <ul className="flex gap-1">
+          <div className="text-sm sm:text-base">
+            <ul className="flex gap-1 ">
               <li className="font-bold flex items-center gap-0.5 ">sam.williams12 <BadgeCheck className="size-4 fill-blue-500 text-black"/></li>
               <li className="opacity-70">•</li>
               <li className="text-white/50">1w</li>
@@ -31,7 +31,7 @@ const PostCard = () => {
           alt="post"
         />
       </div>
-      <section className="space-y-1.5 text-sm">
+      <section className="space-y-1.5 text-xs sm:text-sm">
         <div className="flex justify-between  ">
           <div className="flex gap-4 items-center *:hover:opacity-50 *:transition-all *:cursor-pointer">
             <Heart/>
