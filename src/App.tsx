@@ -59,7 +59,7 @@ function App() {
    <>
     <main className='h-screen relative overflow-y-scroll flex sm:flex-row flex-col bg-black text-white'>
       <div className='sm:block hidden h-screen w-44 md:w-60'>
-        <aside className='size-full sticky top-0 left-0 bg-black flex flex-col justify-between px-3 pt-2 pb-5 border-r border-white/15'>
+        <aside className='h-full w-44 md:w-60 fixed top-0 left-0 bg-black flex flex-col justify-between px-3 pt-2 pb-5 border-r border-white/15'>
           <div>
             <div className='px-3 pb-4 pt-8 mb-5 w-32'>
               <img
